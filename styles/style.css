@@ -27,12 +27,14 @@ body {
     width: 100%;
     max-width: 1920px;
 }
+
 .header {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .header__first-bar{
@@ -86,7 +88,7 @@ body {
     padding: 10px 0;
 }
 
-main {
+.main-home {
     height: auto;
     width: 100%;
     display: flex;
@@ -95,6 +97,10 @@ main {
     justify-content: center;
 }
 
+.main-moto-datail {
+    width: 100%;
+    min-height: 700px;
+}
 
 .moto-show-container {
     display: flex;
@@ -103,6 +109,10 @@ main {
     max-width: 80%;
     gap: 30px;
     padding: 50px 0 80px;
+}
+
+.moto-show__name{
+    font-weight: bold;
 }
 
 .moto-show-item{
@@ -133,6 +143,10 @@ main {
     font-size: 32px;
     color: var(--terciary-color);
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.moto-banner {
+    width: 100%;
 }
 
 .footer {
@@ -199,4 +213,15 @@ main {
 
 .whatsapp-button:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    .moto-show-container {
+        max-width: 94%;
+    }
+
+    .footer__links div {
+        flex-direction: column;
+    }
 }
