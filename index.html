@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Enfield</title>
+    <link rel="stylesheet" href="Styles/global.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/moto-list.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #141414;">
+    <header class="header-container">
+        <div class="header-first-bar">
+            <button class="hamburger-menu">☰</button>  
+            <a href="index.html" class="none"><img src="Assets/Royal_Enfield_logo_letters.png" alt="" class="header-logo1 grow-hover"></a>
+            <a href="index.html" class="none"><img src="Assets/Royal_Enfield-Logo_R.png" alt="" class="header-logo2"></a>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li class="grow-hover"><a class="nav-links" href="index.html">Home</a></li>
+                <li class="grow-hover"><a class="nav-links" href="#">Test-Drive</a></li>
+                <li class="grow-hover"><a class="nav-links" href="#">Acessórios</a></li>
+                <li class="grow-hover"><a class="nav-links" href="#">Assistência</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="width: 100%; max-width: 1920px; padding: 0;">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            
+            <!-- Indicadores (dots) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Imagens do carrossel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="Assets/shotgun-mobile-link.png">
+                        <source media="(min-width: 769px)" srcset="Assets/shotgun-web-link.png">
+                        <img src="Assets/shotgun-web-link.png" alt="Imagem" class="d-block w-100 img-fluid">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="Assets/fev-continental-mobile-2.png">
+                        <source media="(min-width: 769px)" srcset="Assets/fev-continental-web-2.png">
+                        <img src="Assets/fev-continental-web-2.png" alt="Imagem" class="d-block w-100 img-fluid">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="Assets/fev-fireball-mobile.png">
+                        <source media="(min-width: 769px)" srcset="Assets/fev-fireball-web.png">
+                        <img src="Assets/fev-fireball-web.png" alt="Imagem" class="d-block w-100 img-fluid">
+                    </picture>
+                </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="divisory">
+        <h2 class="divisory__title">Escolha sua moto</h2>
+    </div>
+
+    <section id="moto-list" class="moto-list__container">
+        <div class="moto-list__item">
+            <img src="Assets/Shotgun.png" alt="Shotgun" class="moto-list__img grow-hover">
+            <div class="moto-list__details">
+                <p class="detail-name">Shotgun</p>
+                <p class="detail-price">R$ 23.790</p>
+                <button type="button" class="btn-primary">Detalhes</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner-bottom-container">
+        <div class="divisory">
+            <h2 class="divisory__title">#royalenfield</h2>
+        </div>
+        <img src="Assets/Banner_Store.jpg" alt="Banner Store" class="banner-bottom">
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="Scripts/menu-pop.js"></script>
+    <script src="Scripts/fetch-motos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

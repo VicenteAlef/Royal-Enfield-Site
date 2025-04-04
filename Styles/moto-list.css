@@ -1,0 +1,56 @@
+.moto-list__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.moto-list__item {
+    display: flex;
+    width: 95%;
+    max-width: 1024px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.moto-list__img {
+    width: 100%;
+}
+
+.moto-list__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    padding: 20px;
+    z-index: 1;
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
+    color: white;
+}
+
+.detail-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.detail-price {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .detail-name {
+        font-size: 20px;
+    }
+    .detail-price {
+        font-size: 16px;
+    }
+}
